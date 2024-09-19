@@ -1,79 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operadores</title>
-    <link rel="stylesheet" href="js.css">
-    <link rel="shortcut icon" href="../js.png" type="image/x-icon">
-</head>
-<body>
-    <h1>Operadores Logico</h1>
-    <h2>Operadores</h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Operadores</title>
+        <link rel="stylesheet" href="js.css">
+        <link rel="shortcut icon" href="../js.png" type="image/x-icon">
+    </head>
+    <body>
+        <h1>Operadores Lógicos</h1>
+        <h2>Operadores</h2>
+        <p>Aritméticos/Atribuição</p>
 
-    <ol class="oper">
-        <li> + soma</li>
-        <li> - subtração</li>
-        <li> * multiplicação</li>
-        <li> / divisão</li>
-        <li> % divisão inteira</li>
-        <li> ** potencia ao quadrado</li>
-    </ol>
-    <h2>Ordem de precedência dos operadores</h2>
-    <ol>
-        <li>() parentes</li>
-        <li>** potencia</li>
-        <li>* / % multiplicação,divisão,resto de divisão</li>
-        <li>+ - soma e subtração</li>
-    </ol>
-    <h2>Atribuição simples</h2>
-    
-    --------------------------------------------------------------------------
-     <h2>campo de código funcional</h2>
-     <p>Espaço onde funciona o codigo</p>
+        <ol class="oper">
+            <li> + soma</li>
+            <li> - subtração</li>
+            <li> * multiplicação</li>
+            <li> / divisão</li>
+            <li> % divisão inteira</li>
+            <li> ** potencia ao quadrado</li>
+        </ol>
+        <h2>Ordem de precedência dos operadores</h2>
+        <ol>
+            <li>() parentes</li>
+            <li>** potencia</li>
+            <li>* / % multiplicação,divisão,resto de divisão</li>
+            <li>+ - soma e subtração</li>
+        </ol>
+        <h2>Atribuição simples</h2>
 
-    
-    --------------------------------------------------------------------------
+        --------------------------------------------------------------------------
+        <h2>campo de código funcional</h2>
+        <p>Espaço onde funciona o codigo</p>
 
-    <script>/*
-        var num01 = Number.parseInt(window.prompt('Digite um valor:' ))
-        var num02 = Number.parseInt(window.prompt('Digite outro valor:' ))
-        var r = num01 + num02 / 2
-        window.alert(`${r}`)
+        
+        --------------------------------------------------------------------------
 
-        var num01 = Number.parseInt(window.prompt('Digite um valor:'))
-        var num02 = Number.parseInt(window.prompt('Digite outro valor:'))
-        var r = (num01 + num02) / 2
-        window.alert(`${r}`)
+        <script>
+            /*
+            var num01 = Number.parseInt(window.prompt('Digite um valor:' ))
+            var num02 = Number.parseInt(window.prompt('Digite outro valor:' ))
+            var r = num01 + num02 / 2
+            window.alert(`${r}`)
 
-        var num01 = Number.parseInt(window.prompt('Digite um valor:'))
-        var num02 = Number.parseInt(window.prompt('Digite outro valor:'))
-        var r = (num01 + num02) % 2
-        window.alert(`${r}`)*/
-    </script>
-    <h2>Linhas de Codigo</h2>
+            var num01 = Number.parseInt(window.prompt('Digite um valor:'))
+            var num02 = Number.parseInt(window.prompt('Digite outro valor:'))
+            var r = (num01 + num02) / 2
+            window.alert(`${r}`)
+
+            var num01 = Number.parseInt(window.prompt('Digite um valor:'))
+            var num02 = Number.parseInt(window.prompt('Digite outro valor:'))
+            var r = (num01 + num02) % 2
+            window.alert(`${r}`)
+            */
+            
+            //digite o umero 5 para dar os resultados apresentados = aos que estão afrente dos codigos.
+           /* 
+            var num = Number(window.prompt('Digite o valor [5]:'))
+            var a = (num + 3)
+            window.alert(`${num} + 3 = ${a}`)//= 8
+            //var b = 3
+            var b = (a % 5 )
+            window.alert(`a % 5 = ${b}`)//= 3
+            var c = 5 * b ** 2 
+            window.alert(`5 * b ** 2 = ${c}`)//= 45
+            var d = 10 - a /2 
+            window.alert(`10 - a / 2 = ${d}`)//= 6
+            var e = 6 * 2 / d
+            window.alert(`6 * 2 / d = ${e}`)//= 2
+            var f = b % e + 4 / e
+            window.alert(`b % e + 4 / e = ${f}`)//= 3
+            */
+        </script>
+        <h2>Linhas de Codigo no vs code</h2>
+        <pre>
+            <code>
+                <strong>
+                    var num01 = Number.parseInt(window.prompt('Digite um valor:' ))
+                    var num02 = Number.parseInt(window.prompt('Digite outro valor:' ))
+                    var r = num01 + num02 / 2
+                    window.alert(`${r}`)
+                    5 + 3 / 2 = 6.5
+                    
+                    var num01 = Number.parseInt(window.prompt('Digite um valor:'))
+                    var num02 = Number.parseInt(window.prompt('Digite outro valor:'))
+                    var r = (num01 + num02) / 2
+                    window.alert(`${r}`)
+                    (5 + 3 )/ 2 = 4
+
+                    var num01 = Number.parseInt(window.prompt('Digite um valor:'))
+                    var num02 = Number.parseInt(window.prompt('Digite outro valor:'))
+                    var r = (num01 + num02) % 2
+                    window.alert(`${r}`)
+                    (5 + 4 )% 2 = 1
+                </strong>
+            </code>
+        </pre>
+        <h2>Linhas de codigo no vs code de auto atribuições</h2>
+        <pre>
+            <code>
+            
+                <strong>
+                    var num = Number(window.prompt('Digite o valor [5]:'))
+                    var a = (num + 3)
+                    window.alert(`${num} + 3 = ${a}`)//= 8
+                    //var b = 3
+                    var b = (a % 5 )
+                    window.alert(`a % 5 = ${b}`)//= 3
+                    var c = 5 * b ** 2
+                    window.alert(`5 * b ** 2 = ${c}`)//= 45
+                    var d = 10 - a /2
+                    window.alert(`10 - a / 2 = ${d}`)//= 6
+                    var e = 6 * 2 / d
+                    window.alert(`6 * 2 / d = ${e}`)//= 2
+                    var f = b % e + 4 / e
+                    window.alert(`b % e + 4 / e = ${f}`)//= 3
+                </strong>
+
+            </code>
+        </pre>
+        <h2>Comando no terminal node, atuação de operadores</h2>
+        <pre>
+            <code>
+                
+                <strong>
+                    Type ".help" for more information.
+                    > var n1 = 5 + 3 / 2
+                    undefined
+                    > n1
+                    6.5
+                    > var a = 5 + 3
+                    undefined
+                    > a
+                    8
+                    > var b = a % 5
+                    undefined
+                    > b
+                    3
+                    > var c = 5*b**2
+                    undefined
+                    > c
+                    45
+                    > var d = 10-a/2
+                    undefined
+                    > d
+                    6
+                    > var e =6*2/d
+                    undefined
+                    > e
+                    2
+                    > var f = b % e + 4 / e
+                    undefined
+                    > f
+                    3
+                    >
+                </strong>
+            </code>
+        </pre>
+        <h2>Redução de operadores</h2>
+        <pre>
+            <code>
+                <strong>
+                    > var num = 8
+                    undefined
+                    > num
+                    8
+                    > num += 2
+                    10
+                    > num += 2
+                    12
+                    > num -= 1
+                    11
+                    > num /= 3
+                    3.6666666666666665
+                    > num %= 2
+                    1.6666666666666665
+                    > num ** = 2 //codigo digitado errado o = tem que ser colado o operador.
+                    num ** = 2
+                    ^
+                    Uncaught SyntaxError: Unexpected token '='
+
+                    > num **= 2 //codigo digitado certo.
+                    2.7777777777777772
+                    >
+
+                    
+                    <h2>Incremento:</h2>
+                    > var n = 10
+                    undefined
+                    > n
+                    10
+                    > n ++
+                    10
+                    > n
+                    11
+                    > n ++
+                    11
+                    > n
+                    12
+                    > n --
+                    12
+                    > n
+                    11
+                    > n--
+                    11
+                    > n
+                    10
+                    >
+
+                (Operadores antes da variavel)
+                    > ++ n
+                    11
+                    > ++ n
+                    12
+                    > -- n
+                    11
+                    > --n
+                    10
+                    >
+
+                </strong>
+            </code>
+        </pre>
+    <h2>Operadores Relacionais, Lógicos e Ternário</h2>
     <pre>
         <code>
             <strong>
-                var num01 = Number.parseInt(window.prompt('Digite um valor:' ))
-                var num02 = Number.parseInt(window.prompt('Digite outro valor:' ))
-                var r = num01 + num02 / 2
-                window.alert(`${r}`)
-                5 + 3 / 2 = 6.5
-                
-                var num01 = Number.parseInt(window.prompt('Digite um valor:'))
-                var num02 = Number.parseInt(window.prompt('Digite outro valor:'))
-                var r = (num01 + num02) / 2
-                window.alert(`${r}`)
-                (5 + 3 )/ 2 = 4
+                5 > 2
+                true
+                7 < 4
+                false
+                8 >= 8
+                true
+                9 <= 7
+                false
+                5 == 5
+                true
+                4 != 4
+                false
 
-                var num01 = Number.parseInt(window.prompt('Digite um valor:'))
-                var num02 = Number.parseInt(window.prompt('Digite outro valor:'))
-                var r = (num01 + num02) % 2
-                window.alert(`${r}`)
-                (5 + 4 )% 2 = 1
+            (operadores de identidade)
+                > 5 == 5
+                true
+                > 5 == '5'
+                true
+                > 5 === '5'
+                false
+                > 5 === 5
+                true
+                > 'x' == 'y'
+                false
+                > 'x' === 'y'
+                false
+                > 'x' == 'x'
+                true
+            
             </strong>
         </code>
     </pre>
-</body>
+    
+    
+    </body>
 </html>
