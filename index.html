@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="js.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Estou em treino-javaScript</h1>
+    <form class="f_cadastro" action="{% url 'cliente'%}" method="POST">
+        <div class="dados"> 
+            <label class="f_cliente">Nome:</label>
+            <input type="text" id="nome" name="nome" required="required" >
+            <label class="f_cliente">Email:</label>
+            <input type="email" name="email" pattern="([A-Za-z0-9]+[,-_])*[A-Za-z0-9]+@[A-Za-z0-9.]+(\.[A-Z|a-z]{2,})"
+            placeholder="example@email.com" >
+            <label class="f_cliente">Celular:</label>
+            <input type="tel" name="celular" pattern="[0-9]{2}[9]{1}[0-9]{4}[0-9]{4}" placeholder="xx 9-xxxx-xxxx">
+            <label class="f_cliente">Telefone:</label>
+            <input type="tel" name="telefone" pattern="[0-9]{2}[0-9]{4}[0-9]{4}" placeholder="xx xxxx-xxxx"><br>
+            <textarea placeholder="Deixe sua opnião"></textarea>
+        </div>        
+        
+        <input type="submit" class="botao" name="botao1" id="botao1" onclick="Salvar();" value="Salvar" />
+        <input type="reset" class="botao" name="botao2" id="botao2" onclick="Limpar();" 
+        value="Limpar"/>
+        <input type="submit" class="botao" name="botao3" id="botao3" onclick="Enviar();" 
+        value="Enviar"/><br>
+    
+        <a href="index2.html" class="button" id="button">Janela</a>
+       
+    </form>
+</body>
+<script src="index.js"></script>
+</html>

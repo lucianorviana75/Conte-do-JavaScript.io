@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro javaScript</title>
+    <link rel="stylesheet" href="js.css">
+</head>
+<body>
+    <h1>Ola mundo</h1>
+    <p>Para executar a ação a baixo tenho que usar:
+        <ol>
+            <li>Number.parseInt</li>
+            <li>Number.parseflout</li>
+            <li>Number</li>
+            <p>O <strong>Number</strong> é mais atual ,assim não preciso me preocupar qual valor é o numero.Se é inteiro ou flout, mais não descarta os outros ,pois poderei precisar especificar qual eu quero.</p>
+        </ol>
+        <pre class="comando">
+                <code>
+                var n1 = Number.parseInt(window.prompt('Digite um valor:'))//string
+                var n2 = Number.parseInt(window.prompt('Digite outro valor'))//string
+                var s = n1 + n2
+                window.alert('A soma entre os numeros é '+ s)
+                // number + number para adção
+                // string + string para concatenização
+                </code>
+                </pre>
+    </p>
+    <script>
+        var n1 = Number(window.prompt('Digite um valor:'))//string
+        var n2 = Number(window.prompt('Digite outro valor'))//string
+        var s = n1 + n2
+        window.alert('A soma entre os numeros é '+ s)
+        // number + number para adção
+        // string + string para concatenização
+        
+    </script>/µ°°
+    <p>Versão antiga</p>
+    <pre class="comando">
+        <code>
+        > 'O aluno ' + nome + ' com ' + idade + ' anos tirou a nota '+ nota //Esta é a versão antiga
+          'O aluno luciano com 47 anos tirou a nota 5.5'
+        </code>
+    </pre>
+    <p>Versão atualizada</p>
+    <pre class="comando">
+        <code>   
+        > `O aluno ${nome} com ${idade} anos tirou a nota ${nota}`//Esta é a versão atual
+           O aluno luciano com 47 anos tirou a nota 5.5'
+        </code>
+    </pre>
+
+    
+</body>
+</html>

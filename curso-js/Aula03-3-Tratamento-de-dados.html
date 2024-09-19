@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document pra treino</title>
+    <link rel="stylesheet" href="js.css">
+    <link rel="shortcut icon" href="../js.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Formatação de string e numeros</h1>
+   
+    <script>
+        var nome =  window.prompt('Digite seu nome:')
+        window.alert(nome)
+        window.alert(`seu nome tem ${nome.length} letras`)
+        window.alert(`transformando seu nome em letra maiuscula usando o toUpperCase() = ${nome.toUpperCase()}`)
+        window.alert(`Transformando seu nome em letra minuscula usando o toLowerCase() = ${nome.toLowerCase()}`)
+    
+        var nome = window.prompt('Digite uma frase para saber quantas letras tem a frase .')
+        document.write(`<h3>A frase ${nome} tem ${nome.length} letras.</h3>`)
+
+        
+    
+    </script>
+    <h1>Foratando string pelo visual code</h1>
+    <pre>
+        <code>
+            var nome = window.prompt('Digite seu nome')
+            window.alert(nome)
+            window.alert(nome.length)
+            window.alert(nome.toUpperCase())
+            window.alert(nome.toLowerCase())
+            
+            var nome = window.prompt('Quantas letras tem esta frase?')
+            document.write(`A frase <strong>${nome}</strong> tem <strong>${nome.length}</strong> letras.`)
+
+        </code>
+    </pre>
+
+    <h1>Formatando numeros no terminal node</h1>
+    <pre>
+        <code>
+            > var n1 = 1545.5
+            undefined
+            > n1
+            1545.5
+            > n1.toFixed(2)
+            '1545.50'
+            > n1.toFixed(4)
+            '1545.5000'
+            > n1.toFixed(2).replace('.',',')
+            '1545,50'
+            > n1.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})
+            'R$ 1.545,50'
+            > n1.toLocaleString('pt-BR',{style: 'currency', currency: 'USD'})
+            'US$ 1.545,50'
+            > n1.toLocaleString('pt-BR',{style: 'currency', currency: 'EUR'})
+            '€ 1.545,50'
+            >
+        </code>
+    </pre>
+
+</body>
+</html>
