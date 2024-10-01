@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armazenamento de dados</title>
+</head>
+<body>
+ <h1>Armazenamento de Dados</h1>
+ <script src="cookieUtil.js"></script>
+ <script>
+    function salvarCookie(name){
+        var valor = document.forms['cookieForm'].cookieValue.value;
+        var itemStorage = sessionStorage.setItem('dataStorage',valor);
+        var valorItemStorage = sessionStorage.getItem('dataStorage');
+        if(!valor)
+            alert('Entre um valor para o cookie e dado.');
+        else{
+            cookieUtil.set(name, valor);
+            var mensagem = 'Um cookie denominado "meuCookie" com o valor '+valor+'\n';
+            mensagem += 'e um dado com nome "dataStorage" com o valor ' + valorItemStorage + '\n';
+            mensagem += 'foram criados'
+            alert(mensagem);
+        }    
+    }
+    function lerCookie(name){
+        var valorItemStorage = sessionStorage.getItem('dataStorage');
+        var mensagem = 'um cookie denominado "meuCookie" com valor '+cookieUtil.get(name)+'\n';
+        mensagem += 'e um dado com nome "dataStorage" com o valor '+valorItemStorage +'\n';
+        mensagem += 'foram lidos'
+        alert(mensagem);
+    }
+    function apagarCookie(name){
+        cookieUtil.unset(name);
+        sessionStorage.removeItem('dataStorage');
+        alert('cookie com o nome "meuCookie" e dado com o nome "dataStorage" foram apagados');
+    }
+ </script>
+ <section>
+    <form name="cookieForm"  action="#"><p>
+        <label>Escolha um valor para o cookie de nome "meuCookie"
+        <br>O mesmo será usado para o dado de nome "dataStorage":</label><br>
+        <input name="cookieValue" /></p>
+    </form>
+    <p><a href="#" onclick="salvarCookie(meuCookie)">Armazenar cookie e dado</a></p>
+    <p><a href="#" onclick="lerCookie(meuCookie)">Ler cookie e dado</a></p>
+    <p><a href="#" onclick="apagarCookie(meuCookie)">Apagar cookie e dado</a></p>
+ </section>
+
+</body>
+</html>
