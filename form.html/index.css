@@ -1,0 +1,40 @@
+body{
+    background-color: blueviolet;
+    margin-left: 30px;
+    margin-right: 30px;
+   
+
+
+}
+.dados{
+    text-align: justify;
+    display: grid;
+    text-decoration: none;
+}
+
+.f_cliente{
+    color: blue;
+   
+}
+.botao{
+    background-color: #66FFFF;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    color: black;
+}
+.button{
+    background-color: rgb(69, 9, 235);
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    color: white;
+}
