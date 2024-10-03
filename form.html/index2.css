@@ -1,0 +1,33 @@
+body{
+    background-color: blueviolet;
+    color: aliceblue;
+}
+form{
+    width: 500px;
+    margin: 20px auto;
+}
+fieldset{
+    padding: 30px;
+    border: solid 2px gray;
+}
+legend{
+    font-size: 24px;
+}
+label{
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px;
+    color: aliceblue;
+}
+
+input[type=text]{
+    width: 314px;
+    height: 30px;
+}
+input[type=submit]{
+    width: 150px;
+    height: 30px;
+    float: right;
+    background-color: blue;
+}
