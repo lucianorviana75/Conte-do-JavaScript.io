@@ -16,7 +16,7 @@ function captura_eventos(objeto, evento, funcao) {
         objeto.attachEvent(evento, funcao);
     }
 }
-/*
+
 //função para validar eventos
 function formValid(event) {
     if (document.forms[0].textname.value.length == 0) {
@@ -32,6 +32,5 @@ function formValid(event) {
         alert("Olá" + document.forms[0].textname.value);
         return true;
     }
-    
+
 }
-    */

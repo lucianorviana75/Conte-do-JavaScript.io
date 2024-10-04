@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementById</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>JS</h1>
+    <h2>Functions</h2>
+    <h3>função declarativa</h3>
+    <pre>
+        <code>
+            function mensagem() {
+                alert("Area function ");
+                alert("Função declarativa ");
+            }
+            //chamando a mensagem
+            mensagem()
+        </code>
+    </pre>
+    <h3>função anonima</h3>
+    <pre>
+        <code>
+            var mensagem = function () {
+                alert("Função anonima ");
+            }
+            //chamando a mensagem
+            mensagem()
+        </code>
+    </pre>
+    <h3>Passando parâmetro</h3>
+    <pre>
+        <code>
+            var mensagem = function (frase) {
+                alert(frase);
+            }
+            //chamando a função mensagem
+            mensagem(" Bem vindo a Function ")
+        </code>
+    </pre>
+    <pre>
+        <code>
+            function mensagem(frase) {
+                alert(frase);
+            }
+            //chamando a função mensagem
+            mensagem(" Bem vindo a Function ")
+        </code>
+    </pre>
+    <h3>Retornando valores</h3>
+    <pre>
+        <code>
+            var mensagem = function (mensagem) {
+                document.write(mensagem)
+            }
+
+            var minhaFuncao = function (num1, num2) {
+
+                if (num1 > num2) {
+                    return (mensagem(num1 + " é maio que " + num2));
+                } else {
+                    return (mensagem(num2 + " é maio que " + num1));
+                }
+            }
+            
+            minhaFuncao(5, 6);
+        </code>
+    </pre>
+    <h2>getElementById</h2>
+    
+    
+    
+   
+</body>
+</html>

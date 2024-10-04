@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML FORM</h1>
+    <h2>form</h2>
+   <!-- 
+    <form method="get" action="">
+        <p><label for="">E-mail:<br/> <input type="email" name="email" placeholder="nome@email.com"></label></p>
+    </form>
+   -->    
+    <h3>Atribute required</h3>
+    <!--
+    <form>
+        <p><label for="nome">Nome:</label> <input id="nome" type="text" required name="nome">
+        <input type = submit value="Ok"> </p>
+    </form>
+    -->        
+    <h3>Atributo Autocomplete</h3>
+    <!--
+    <form>
+        <p><label for="nome">Nome:</label><input id="nome" type="text" required autocomplete="on" name="nome"><input type=submit value="Ok"></p>
+    </form>
+    -->    
+    <h3>Atributo dirname</h3>
+    <!--
+    <form>
+        <p><label for="">Mensagem: <textarea name="msg" dirname="msg.dir" id=""></textarea></label></p>
+        <input type="submit" name="Enviar" value="enviar">
+    </form>
+    -->
+    <h3>Atributo form</h3>
+    <!--
+   
+    <form method="get" action="" id="xpto">
+        <p><label>E-mail: <input type="text" name="email"></label></p>
+        <p><label>Mensagem: <textarea name="msg"></textarea></label></p>
+        <p><input type="submit" name="enviar" value="enviar"></p>
+    </form>
+    <p><label>Nome: <input type="text" name="nome" form="xpto"></label></p>
+    -->
+    <h2>Atributos para acessar outros arquivos</h2>
+    <h3>Atributo formation</h3>
+    <!--
+    <form method="get">
+        <p><label>Nome: <input type="text" name="nome"></label></p>
+        <p><label>E-mail: <input type="text" name="email"></label></p>
+        <p></label>Mensagem: <textarea name="msg" id=""></textarea></label></p>
+        <p><input type="submit" name="enviar" value="enviar" formaction="processa-form.php"></p>
+
+    </form>    
+    -->
+    <h3>Atributo formenctype</h3>
+    <!--
+    <form method="post" action="processa-form.php">
+        <p><label>Arquivo: <input type="file" name="arq"></label></p>
+        ...
+        <p><input type="submit" name="enviar" value="enviar" enctype="multipart/form-data"></p>
+
+    </form>
+    
+    -->
+
+    <h3>Atributo formmethod</h3>
+    <!--
+    <form action="processa-form.php">
+        <p><label>Nome</label><input type="text" name="text"></p>
+        <p><label>E-mail</label><input type="text" name="text"></p>
+        <p><label>Mensagem</label><textarea name="msg"></textarea></p>
+        <p><input type="submit" name="enviar" value="enviar" formmethod="get"></p>
+    </form>
+    -->
+    <h3>Atributo formnovalidade</h3>
+    <!--
+    <form method="post" action="processa-form.php">
+        <p><label>Nome</label><input type="text" name="text"></p>
+        <p><label>E-mail</label><input type="text" name="text"></p>
+        <p><label>Mensagem</label><textarea name="msg"></textarea></p>
+        <p><input type="submit" name="enviar" value="enviar" formmethod="get"></p>
+        <p><input type="submit" name="gravar" value="Salvar" formnovalidate></p>
+
+    </form> ]
+    -->
+
+    
+   
+    <form action="">
+        <h2>Form2 rascunho</h2>
+        <p><label >E-mail:</label><input type="email" name="email" id="email"><input type="submit" value="Ok"></p>
+        <p><label >Nome:</label><input type="text"></p>
+        <p><label >Idade:</label><input type="number" name="idade" id="idade"><input type="submit" value="Ok"></p>
+        <p><label for="">CPF:</label><input type="text" name="cpf" id="cpf"><input type="submit" value="Ok"></p>
+        <p><label for="">Vazio:</label><input type="text" name="vazio" id="vazio"></p>
+    </form>
+</body>
+</html>
